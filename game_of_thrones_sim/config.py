@@ -13,7 +13,7 @@ class Config:
     SAVE_DIR        = "./saves_got_v3" # Updated save dir name
     LOCATIONS       = ["Winterfell", "KingsLanding", "TheWall", "Dragonstone", "Braavos"]
     # --- LLM ---
-    MODEL           = "gemini-1.5-flash-preview-0514" # Using Gemini Flash as updated in original code (Corrected model name based on common Gemini models, original had a typo "gemini-2.5-flash-preview-04-17")
+    MODEL           = "gemini-2.5-flash-preview-04-17" # Using Gemini Flash as updated in original code (Corrected model name based on common Gemini models, original had a typo "")
     API_TIMEOUT     = 25.0 # Increased timeout slightly for potentially complex calls
     MAX_CONCURRENT_LLM_CALLS = 10 # Reduced slightly for stability
     FORBIDDEN = { # Words forbidden in *agent direct output* (speak, reflect, code comments)

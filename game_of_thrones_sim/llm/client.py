@@ -54,7 +54,6 @@ def initialize_llm_client(model_name: str, api_key: Optional[str] = None) -> boo
         return False
 
     resolved_api_key = api_key or os.getenv("GOOGLE_API_KEY") # Prioritize passed key
-    # The original code had a hardcoded key: "AIzaSyAAFpDNLv8EYWpqQpmd8ijRAekynL0N3HE"
     # It's better to use environment variables or pass it directly.
     # For this refactoring, I'll keep the logic to use the env var or passed key.
     # If you intend to keep a default hardcoded key, it should be handled carefully.
